@@ -197,6 +197,10 @@ var init = () => {
         prestige_cost = prestige_cost_cases[25]
         break;
     }
+
+    if (currency.value > 1e250) {
+      //see popup wow
+    }
 }
 
 var updateAvailability = () => {
