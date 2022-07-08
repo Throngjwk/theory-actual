@@ -21,32 +21,32 @@ var prestige_points = 0;
 var day;
 var prestige_cost;
 var prestige_cost_cases = [
-  BigNumber.from("4.22e7"), //0,
-  BigNumber.from("1.77e17"), //1,
-  BigNumber.from("5.56e24"), //2,
-  BigNumber.from("1.18e36"), //3,
-  BigNumber.from("5.52e43"), //4,
-  BigNumber.from("1.57e51"), //5,
-  BigNumber.from("6.22e58"), //6,
-  BigNumber.from("2.09e61"), //7,
-  BigNumber.from("4.57e69"), //8,
-  BigNumber.from("2.23e75"), //9,
-  BigNumber.from("1.09e79"), //10,
-  BigNumber.from("8.82e85"), //11,
-  BigNumber.from("9.09e90"), //12,
-  BigNumber.from("2.09e96"), //13,
-  BigNumber.from("1.01e101"), //14,
-  BigNumber.from("4.33e108"), //15,
-  BigNumber.from("1.16e113"), //16,
-  BigNumber.from("9.22e123"), //17,
-  BigNumber.from("5.55e130"), //18,
-  BigNumber.from("2.56e134"), //19,
-  BigNumber.from("6.22e140"), //20,
-  BigNumber.from("5.09e149"), //21,
-  BigNumber.from("2.22e155"), //22,
-  BigNumber.from("1.09e166"), //23,
-  BigNumber.from("3.36e170"), //24,
-  BigNumber.from("4.89e177"), //25,
+  BigNumber.from("4.22e7"),
+  BigNumber.from("1.77e17"),
+  BigNumber.from("5.56e24"),
+  BigNumber.from("1.18e36"),
+  BigNumber.from("5.52e43"),
+  BigNumber.from("1.57e51"),
+  BigNumber.from("6.22e58"),
+  BigNumber.from("2.09e61"),
+  BigNumber.from("4.57e69"),
+  BigNumber.from("2.23e75"),
+  BigNumber.from("1.09e79"),
+  BigNumber.from("8.82e85"),
+  BigNumber.from("9.09e90"),
+  BigNumber.from("2.09e96"),
+  BigNumber.from("1.01e101"),
+  BigNumber.from("4.33e108"),
+  BigNumber.from("1.16e113"),
+  BigNumber.from("9.22e123"),
+  BigNumber.from("5.55e130"),
+  BigNumber.from("2.56e134"),
+  BigNumber.from("6.22e140"),
+  BigNumber.from("5.09e149"),
+  BigNumber.from("2.22e155"),
+  BigNumber.from("1.09e166"),
+  BigNumber.from("3.36e170"),
+  BigNumber.from("4.89e177"),
 ]
 
 var init = () => {
@@ -115,6 +115,87 @@ var init = () => {
           break;
         case  6:
          day = "Saturday";
+    }
+
+    switch (prestige_points) {
+      case 0:
+       prestige_cost = prestige_cost_cases[0]
+       break;
+      case 1:
+        prestige_cost = prestige_cost_cases[1]
+        break;
+      case 2:
+        prestige_cost = prestige_cost_cases[2]
+        break;
+        case 3:
+          prestige_cost = prestige_cost_cases[3]
+          break;
+        case 4:
+        prestige_cost = prestige_cost_cases[4]
+        break;
+        case 5:
+        prestige_cost = prestige_cost_cases[5]
+        break;
+        case 6:
+        prestige_cost = prestige_cost_cases[6]
+        break;
+        case 7:
+        prestige_cost = prestige_cost_cases[7]
+        break;
+        case 8:
+        prestige_cost = prestige_cost_cases[8]
+        break;
+        case 9:
+        prestige_cost = prestige_cost_cases[9]
+        break;
+        case 10:
+        prestige_cost = prestige_cost_cases[10]
+        break;
+        case 11:
+        prestige_cost = prestige_cost_cases[11]
+        break;
+        case 12:
+        prestige_cost = prestige_cost_cases[12]
+        break;
+        case 13:
+        prestige_cost = prestige_cost_cases[13]
+        break;
+        case 14:
+        prestige_cost = prestige_cost_cases[14]
+        break;
+        case 15:
+        prestige_cost = prestige_cost_cases[15]
+        break;
+        case 16:
+        prestige_cost = prestige_cost_cases[16]
+        break;
+        case 17:
+        prestige_cost = prestige_cost_cases[17]
+        break;
+        case 18:
+        prestige_cost = prestige_cost_cases[18]
+        break;
+        case 19:
+        prestige_cost = prestige_cost_cases[19]
+        break;
+        case 20:
+        prestige_cost = prestige_cost_cases[20]
+        break;
+        case 21:
+        prestige_cost = prestige_cost_cases[21]
+        break;
+        case 22:
+        prestige_cost = prestige_cost_cases[22]
+        break;
+        case 23:
+        prestige_cost = prestige_cost_cases[23]
+        break;
+        case 24:
+        prestige_cost = prestige_cost_cases[24]
+        break;
+        case 25:
+        prestige_cost = prestige_cost_cases[25]
+        break;
     }
 }
 
