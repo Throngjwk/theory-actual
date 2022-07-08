@@ -17,6 +17,10 @@ var c1Exp, c2Exp;
 var achievement1, achievement2;
 var chapter1, chapter2;
 
+var prestige_points = 0;
+var day;
+var prestige_cost;
+
 var init = () => {
     currency = theory.createCurrency();
 
@@ -49,20 +53,6 @@ var init = () => {
     ///////////////////////
     //// Milestone Upgrades
     theory.setMilestoneCost(new LinearCost(25, 25));
-
-    {
-        c1Exp = theory.createMilestoneUpgrade(0, 3);
-        c1Exp.description = Localization.getUpgradeIncCustomExpDesc("c_1", "0.05");
-        c1Exp.info = Localization.getUpgradeIncCustomExpInfo("c_1", "0.05");
-        c1Exp.boughtOrRefunded = (_) => theory.invalidatePrimaryEquation();
-    }
-
-    {
-        c2Exp = theory.createMilestoneUpgrade(1, 3);
-        c2Exp.description = Localization.getUpgradeIncCustomExpDesc("c_2", "0.05");
-        c2Exp.info = Localization.getUpgradeIncCustomExpInfo("c_2", "0.05");
-        c2Exp.boughtOrRefunded = (_) => theory.invalidatePrimaryEquation();
-    }
     
     /////////////////
     //// Achievements
@@ -75,6 +65,29 @@ var init = () => {
     chapter2 = theory.createStoryChapter(1, "My Second Chapter", "This is line 1 again,\nand this is line 2... again.\n\nNice again.", () => c2.level > 0);
 
     updateAvailability();
+
+    switch (Date.now().getDay()) {
+        case 0:
+          day = "Sunday";
+          break;
+        case 1:
+          day = "Monday";
+          break;
+        case 2:
+          day = "Tuesday";
+          break;
+        case 3:
+          day = "Wednesday";
+          break;
+        case 4:
+          day = "Thursday";
+         break;
+        case 5:
+          day = "Friday";
+          break;
+        case  6:
+         day = "Saturday";
+    }
 }
 
 var updateAvailability = () => {
