@@ -35,6 +35,18 @@ var prestige_cost_cases = [
   BigNumber.from("8.82e85"), //11,
   BigNumber.from("9.09e90"), //12,
   BigNumber.from("2.09e96"), //13,
+  BigNumber.from("1.01e101"), //14,
+  BigNumber.from("4.33e108"), //15,
+  BigNumber.from("1.16e113"), //16,
+  BigNumber.from("9.22e123"), //17,
+  BigNumber.from("5.55e130"), //18,
+  BigNumber.from("2.56e134"), //19,
+  BigNumber.from("6.22e140"), //20,
+  BigNumber.from("5.09e149"), //21,
+  BigNumber.from("2.22e155"), //22,
+  BigNumber.from("1.09e166"), //23,
+  BigNumber.from("3.36e170"), //24,
+  BigNumber.from("4.89e177"), //25,
 ]
 
 var init = () => {
