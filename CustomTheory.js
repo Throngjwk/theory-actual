@@ -20,6 +20,22 @@ var chapter1, chapter2;
 var prestige_points = 0;
 var day;
 var prestige_cost;
+var prestige_cost_cases = [
+  BigNumber.from("4.22e7"), //0,
+  BigNumber.from("1.77e17"), //1,
+  BigNumber.from("5.56e24"), //2,
+  BigNumber.from("1.18e36"), //3,
+  BigNumber.from("5.52e43"), //4,
+  BigNumber.from("1.57e51"), //5,
+  BigNumber.from("6.22e58"), //6,
+  BigNumber.from("2.09e61"), //7,
+  BigNumber.from("4.57e69"), //8,
+  BigNumber.from("2.23e75"), //9,
+  BigNumber.from("1.09e79"), //10,
+  BigNumber.from("8.82e85"), //11,
+  BigNumber.from("9.09e90"), //12,
+  BigNumber.from("2.09e96"), //13,
+]
 
 var init = () => {
     currency = theory.createCurrency();
